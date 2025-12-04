@@ -1,0 +1,26 @@
+# application.properties에서는 server.port=8081로 했는데(한줄로)
+# YAML은 계층으로 표현한다.
+server:
+  port: 8081
+
+spring:
+  application:
+    name: 251204_springboot
+  # dev, prod 공통 설정
+  profiles:
+    active: dev
+  # jsp 설정
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+# Value (코드 안에 하드코딩을 방지하고자, 이렇게 문서로 빼서 따로 관리한다는 컨셉)
+app:
+  msg: '나는 최고의 자바 개발자!'
+  skill:
+    - java
+    - javascript
+    - sql
+  year: 2025
+
