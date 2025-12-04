@@ -8,7 +8,7 @@ spring:
     name: 251204_springboot
   # dev, prod 공통 설정
   profiles:
-    active: dev
+    active: prod
   # jsp 설정
   mvc:
     view:
